@@ -43,7 +43,7 @@ public class ReservationService {
     //    return reservationRepository.updateReservation(reservationModel);
     //}
 
-    public ReservationModel updateDoctor(ReservationModel reservationModel) {
+    public ReservationModel updateReservation(ReservationModel reservationModel) {
         if (reservationModel.getIdReservation() != null) {
             Optional<ReservationModel> e = reservationRepository.getReservation(reservationModel.getIdReservation());
             if (e.isPresent()) {

@@ -1,6 +1,7 @@
 package com.jreto33.controller;
 
 
+import com.jreto33.modelo.DoctorModel;
 import com.jreto33.modelo.ReservationModel;
 import com.jreto33.service.ReservationService;
 import org.springframework.beans.factory.annotation.Autowired;

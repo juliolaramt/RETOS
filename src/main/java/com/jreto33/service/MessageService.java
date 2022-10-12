@@ -43,7 +43,7 @@ public class MessageService {
     //public MessageModel updateMessage (MessageModel messageModel ){
     //    return messageRepository.updateMessage(messageModel);
     //}
-    public MessageModel updateDoctor(MessageModel messageModel) {
+    public MessageModel updateMessage(MessageModel messageModel) {
         if (messageModel.getIdMessage() != null) {
             Optional<MessageModel> e = messageRepository.getMessage(messageModel.getIdMessage());
             if (e.isPresent()) {

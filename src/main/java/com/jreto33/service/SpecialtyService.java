@@ -30,7 +30,7 @@ public class SpecialtyService {
     //public boolean deleteSpecialty (Integer id){
     //    return specialtyRepository.deleteSpecialty(id);
     //}
-    public boolean deleteClient(int id){
+    public boolean deleteSpecialty(int id){
         boolean flag=false;
         Optional<SpecialtyModel> e = specialtyRepository.getSpecialty(id);
         if(e.isPresent()){
@@ -43,7 +43,7 @@ public class SpecialtyService {
     //public SpecialtyModel updateSpecialty(SpecialtyModel specialtyModel){
     //    return specialtyRepository.updateSpecialty(specialtyModel);
     //}
-    public SpecialtyModel updateDoctor(SpecialtyModel specialtyModel) {
+    public SpecialtyModel updateSpecialty(SpecialtyModel specialtyModel) {
         if (specialtyModel.getId() != null) {
             Optional<SpecialtyModel> e = specialtyRepository.getSpecialty(specialtyModel.getId());
             if (e.isPresent()) {
