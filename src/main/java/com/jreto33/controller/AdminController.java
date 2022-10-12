@@ -30,7 +30,7 @@ public class AdminController {
         return adminService.saveAdmin(adminModel);
     }
 
-    @DeleteMapping("/delete/{id}")
+    @DeleteMapping("/{id}")
     public boolean deleteAdmin(@PathVariable Integer id){
         return adminService.deleteAdmin(id);
     }

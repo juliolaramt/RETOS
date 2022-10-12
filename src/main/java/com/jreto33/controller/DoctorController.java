@@ -31,7 +31,7 @@ public class DoctorController {
         return doctorService.saveDoctor(doctorModel);
     }
 
-    @DeleteMapping("/delete/{id}")
+    @DeleteMapping("/{id}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
   //public boolean deleteDoctor(@PathVariable Integer id){
     public boolean deleteDoctor(@PathVariable("id") Integer id){

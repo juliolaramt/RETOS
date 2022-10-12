@@ -32,7 +32,7 @@ public class ScoreController {
         return scoreService.saveScore(scoreModel);
     }
 
-    @DeleteMapping("/delete/{id}")
+    @DeleteMapping("/{id}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public boolean deleteScore(@PathVariable Integer id) {
         return scoreService.deleteScore(id);
