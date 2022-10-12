@@ -1,6 +1,7 @@
 package com.jreto33.repository;
 
 import com.jreto33.modelo.ClientModel;
+import com.jreto33.modelo.DoctorModel;
 import com.jreto33.repository.crudrepository.ClientCrudRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
@@ -24,7 +25,8 @@ public class ClientRepository {
     public ClientModel saveClient(ClientModel clientModel ){ return clientCrudRepository.save(clientModel);
     }
 
-    public boolean deleteClient(Integer idClient){ clientCrudRepository.deleteById(idClient);
+    public boolean deleteClient(ClientModel clientModel){
+        clientCrudRepository.delete(clientModel);
         return true;
     }
 

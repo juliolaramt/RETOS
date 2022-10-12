@@ -25,8 +25,8 @@ public class DoctorRepository {
 
         return doctorCrudRepository.save(doctorModel);
     }
-    public boolean deleteDoctor(Integer id){
-        doctorCrudRepository.deleteById(id);
+    public boolean deleteDoctor(DoctorModel doctorModel){
+        doctorCrudRepository.delete(doctorModel);
         return true;
     }
 

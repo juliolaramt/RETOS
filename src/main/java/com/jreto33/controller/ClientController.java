@@ -1,6 +1,7 @@
 package com.jreto33.controller;
 
 import com.jreto33.modelo.ClientModel;
+import com.jreto33.modelo.DoctorModel;
 import com.jreto33.service.ClientService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -44,4 +45,4 @@ public class ClientController {
     public ClientModel updateClient(@RequestBody ClientModel clientModel){
         return clientService.updateClient(clientModel);
     }
-}
+ }
